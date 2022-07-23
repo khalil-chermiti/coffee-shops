@@ -23,7 +23,8 @@ export default function Home(props) {
     const stores = async () => {
       try {
         let stores = await fetch(
-          "http://localhost:3000/api/getCoffeeStores?latLong=40.72891,-74.18912&limit=6"
+          // `api/getCoffeeStores?latLong=40.72891,-74.18912&limit=6`
+          `/api/getCoffeeStores?latLong=${coordinates.lat},${coordinates.long}&limit=6`
         );
 
         stores = await stores.json();
