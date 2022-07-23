@@ -1,0 +1,77 @@
+.container {
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+
+}
+
+.title {
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  color: var(--text-black);
+
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.title1 {
+  color: rgba(249, 250, 251, 1);
+}
+
+.title2 {
+  display: block;
+  color: var(--text-purple);
+}
+
+.subTitle {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  color: var(--text-white-100);
+}
+
+.buttonWrapper {
+  margin-top: 1.25rem;
+}
+
+.button {
+  background-color: var(--text-purple-dark);
+  cursor: pointer;
+  color: white;
+  outline: 0;
+  border: 0px;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.button:hover {
+  background-color: var(--text-purple-dark);
+}
+
+/** 
+  Breakpoints:
+  ------------
+  sm: min-width: 640px; //small device
+  md: min-width: 768px; // medium device
+  lg: min-width: 1024px; // large device
+  xl: min-width: 1280px; // extra large device
+  2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  .title2 {
+    display: inline;
+  }
+}
