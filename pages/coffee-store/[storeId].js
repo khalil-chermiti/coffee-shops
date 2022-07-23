@@ -87,6 +87,7 @@ const CoffeeStore = ({ coffeeStore , storeId}) => {
       setStoreToRender(foundContextStore);
       setVotingCount(foundContextStore.vote);
     } else {
+      handleStoreCreation(coffeeStore);
       setStoreToRender(coffeeStore);
       setVotingCount(coffeeStore.vote);
     }
